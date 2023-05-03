@@ -745,7 +745,15 @@ body {
 /* Activity section */
 
 .activity {
-    padding-bottom: 120px;
+    display: none;
+    /* padding-bottom: 120px; */
+}
+
+@media screen and (min-width:768px){
+    .activity {
+        display: block;
+        padding-bottom: 120px;
+    }
 }
 
 .activity .header-title {
