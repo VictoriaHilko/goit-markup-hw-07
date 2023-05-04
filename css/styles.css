@@ -1534,8 +1534,7 @@ body {
     color: var(--color-navy-blue);
 }
 
-.mobile-menu-item .link:hover,
-.mobile-menu-item .link:focus {
+.mobile-menu-item .current{
     color: var(--color-ocean);
 }
 
