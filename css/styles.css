@@ -692,38 +692,30 @@ body {
     /* Phone styles */
 
     display: flex;
-    flex-direction: column;
-    row-gap: 72px;
+    /* flex-direction: column; */
+    gap: 72px 24px;
+    flex-wrap: wrap;
 
 }
 
-/* Tablet styles */
-@media screen and (min-width: 768px) {
-    .about-list {
-        flex-direction: row;
-        column-gap: 24px;
-        flex-wrap: wrap;
-    }
 
+.about-card {
+    width: 396px;
 }
-
-/* Desktop styles */
-@media screen and (min-width: 1158px) {
-    .about-list {
-        flex-wrap: nowrap;
-    }
-
-}
-
-/* .about-card {
-    width: 356px;
-} */
 
 /* Tablet styles and > */
 @media screen and (min-width: 768px) {
     .about-card {
-        width: calc((100% - 24px) / 2);
-        /* width: 356px; */
+        /* width: calc((100% - 24px) / 2); */
+        width: 356px;
+    }
+}
+
+/* Descop */
+@media screen and (min-width: 1158px) {
+    .about-card {
+        /* width: calc((100% - 24px) / 2); */
+        width: 264px;
     }
 }
 
@@ -887,24 +879,12 @@ body {
 .team-card {
     /* Phone styles */
     /* width: calc((100% - 82px)); */
+    width: 264px;
     background-color: var(--color-white);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
 
-/* Tablet */
-@media screen and (min-width:768px) {
-    .team-card {
-        /* width: calc((100% - 48px) / 2); */
-    }
-}
-
-/* Desktop */
-@media screen and (min-width:1158px) {
-    .team-card {
-        /* width: calc((100% - 72px) / 4); */
-    }
-}
 
 .person-card {
     padding-top: 32px;
@@ -1029,39 +1009,30 @@ body {
 .filter-result {
     /* Phone */
     display: flex;
-    flex-direction: column;
-    row-gap: 48px;
+    gap: 72px 48px;
     flex-wrap: wrap;
-    /* justify-content: center; */
     align-items: center;
+
 }
 
 /* Tablet and > */
 @media screen and (min-width: 768px){
     .filter-result {
-        flex-direction: row;
         column-gap: 24px;
-        row-gap: 72px;
-    }
-}
-
-/* Desktop */
-@media screen and (min-width: 1158px){
-    .filter-result {
-        row-gap: 48px;
     }
 }
 
 
 .filter-card {
-    /* width: 100%; */
+    width: 396px;
     background-color: var(--color-white);
 }
 
 /* Tablet */
 @media screen and (min-width: 768px){
     .filter-card {
-        width: calc((100% - 48px) / 2);
+        /* width: calc((100% - 48px) / 2); */
+        width: 356px;
        
     }
 }
@@ -1070,7 +1041,8 @@ body {
 /* Desktop */
 @media screen and (min-width: 1158px){
     .filter-card {
-        width: calc((100% - 48px) / 3);
+        /* width: calc((100% - 48px) / 3); */
+        width: 360px;
     }
 }
 
