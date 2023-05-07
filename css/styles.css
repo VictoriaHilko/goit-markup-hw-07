@@ -35,6 +35,9 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+
+    /* object-fit: cover;
+    object-position: center; */
 }
 
 /* Body */
@@ -358,7 +361,7 @@ body {
 } */
 
 .hero {
-    /*Phone styles  */
+    /*Phone styles between 320 and 428 px */
     margin: auto;
     padding: 112px 0;
 
@@ -367,27 +370,42 @@ body {
     background-color: var(--color-navy-blue);
     /* background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/hero/hero-image.jpg); */
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/hero/hero-image.jpg);
+    /* background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero/hero-image_mob@1x.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
 }
 
-/* Tablet styles */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 428px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero/hero-image_mob@1x.jpg);
+    }
+
+}
+
+/* Tablet styles from 429px to 767px */
+
+@media screen and (min-width: 429px) and (max-width: 768px) {
     .hero {
         max-width: 768px;
+
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero/hero-image_tab@1x.jpg);
     }
 
 }
 
 /* Desktop styles */
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 769px) {
     .hero {
         max-width: 1440px;
         padding: 188px 0;
+
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero/hero-image_desk@1x.jpg);
     }
 
 }
